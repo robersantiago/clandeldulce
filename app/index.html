@@ -13,6 +13,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <base href="/">
   </head>
   <body ng-app="clanApp">
     <!--[if lt IE 7]>
@@ -23,17 +25,20 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
+          <li><a ng-href="/">Inicio</a></li>
+          <li><a ng-href="/tartas">Tartas</a></li>
+          <li><a ng-href="/cupcakes">Cupcakes</a></li>
+          <li><a ng-href="/pasoapaso">Paso a paso</a></li>
+          <li><a ng-href="/ideas">Ideas</a></li>
+          <li><a ng-href="/contacto">Contacto</a></li>
         </ul>
-        <h3 class="text-muted">clan</h3>
+        <h3 class="text-muted">El Clan del Dulce</h3>
       </div>
 
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+
       </div>
     </div>
 
@@ -83,10 +88,14 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/contacto.js"></script>
+    <script src="scripts/controllers/cupcakes.js"></script>
+    <script src="scripts/controllers/ideas.js"></script>
+    <script src="scripts/controllers/pasoapaso.js"></script>
+    <script src="scripts/controllers/tartas.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

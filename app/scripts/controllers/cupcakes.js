@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name clanApp.controller:AboutCtrl
+ * @name clanApp.controller:MainCtrl
  * @description
- * # AboutCtrl
+ * # MainCtrl
  * Controller of the clanApp
  */
 angular.module('clanApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('CupcakesCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
